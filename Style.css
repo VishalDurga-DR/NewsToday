@@ -1,0 +1,100 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    position:relative
+}
+/*Global CSS*/
+.obj-width{
+    max-width: 1200px;
+    margin:auto;
+}
+/*Global CSS*/
+nav{
+    background-color: rgb(39, 39, 39);
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.3rem 0;
+}
+.lnk_logo{
+    color: white;
+    text-decoration: none;
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+    letter-spacing: 2px;
+}
+#Search_input{
+    width: 900px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    color: rgb(0, 0, 0);
+}
+#Search_button{
+    padding: 10px 20px;
+    background-color: rgb(255, 17, 0);
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+    margin-left: 6px;
+    color: rgb(0, 0, 0);
+}
+#Blog_container{
+    padding: 3rem 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items:flex-start;   
+    flex-wrap: wrap;
+}
+.blog_card{
+    width: 280px;
+    border: 1px solid #222222;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 1rem;
+    margin:10px;
+}
+.blog_card img{
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+.blog_card:hover{
+    box-shadow: 40px 40px 80px rgba(2, 2, 2, 0.1);
+}
+
+.blog_card h2{
+    color: #222222;
+    font-style: 1.7rem;
+    font-weight: 500;
+}
+.blog_card p{
+    font-style: 1.2rem;
+padding: 0.7rem;
+}
+
+@media(max-width:500px){
+    nav {
+        padding:  0 20px;
+    }
+    .navbar .lnk_logo{
+        font-size: 1.8rem;
+    }
+    #search-input{
+        width:150px;
+        padding:10px 10px;
+    }
+    .blog_card{
+        width: 100%;
+    }
+}
